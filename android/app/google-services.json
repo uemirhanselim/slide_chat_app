@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1034896877543",
+    "firebase_url": "https://slide-chat-2-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "slide-chat-2",
+    "storage_bucket": "slide-chat-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034896877543:android:e3a53ac3edbf34e4063f42",
+        "android_client_info": {
+          "package_name": "com.emirhanuzun.slide_chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034896877543-65m1ck3pp2a8ge007qu4duialqv49ths.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1Qt3Jc4xYRGOw14Gi6ImyBx06kHkpkzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034896877543-65m1ck3pp2a8ge007qu4duialqv49ths.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
