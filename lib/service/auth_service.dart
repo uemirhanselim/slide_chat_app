@@ -1,8 +1,10 @@
 import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:slide_chat_app/service/base/auth_service.dart';
+import 'package:intl/intl.dart';
 
 class AuthService extends AuthServiceBaseClass {
-  final firebaseRef = FirebaseDatabase.instance.reference();
+  final firebaseRef = FirebaseDatabase.instance.ref();
 
   @override
   void register(String? userName, String? email, String? password,
@@ -18,7 +20,7 @@ class AuthService extends AuthServiceBaseClass {
       'aboutMe': aboutMe
     };
 
-    firebaseRef.child('users').child(userName.toLowerCase()).set(map);
+    firebaseRef.child('users').child(userName.toLowerCase()).setWithPriority(map,getDate());
   }
 
   @override
@@ -26,4 +28,9 @@ class AuthService extends AuthServiceBaseClass {
     // TODO: implement login
     throw UnimplementedError();
   }
+  String getDate() {
+  final formatter = DateFormat("dd-MM-yyyy");
+  final date = DateTime.now();
+  return formatter.format(date);
+}
 }
