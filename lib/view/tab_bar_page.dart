@@ -16,7 +16,7 @@ class _TabBarScreenState extends State<TabBarPage> {
   final _auth = FirebaseAuth.instance;
   late User loggedInUser;
   int _selectedIndex = 1;
-  final tabs = [
+  final tabs = const [
     ConversationsPage(),
     DiscoverPage(),
     ProfilePage(),
@@ -42,7 +42,6 @@ class _TabBarScreenState extends State<TabBarPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: ColorHelper.backgroundColor,
         body: tabs[_selectedIndex],
         bottomNavigationBar: Container(
           child: buildBottomNavigationBar(),

@@ -73,7 +73,7 @@ class LoginPage extends StatelessWidget {
   }
 }
 
-/*
+/*      --- Checkbox ---
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: const [

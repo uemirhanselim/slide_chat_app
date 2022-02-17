@@ -12,8 +12,6 @@ class LoginViewModel with ChangeNotifier {
   SharedPreferencesServices pref = locator<SharedPreferencesServices>();
   final _auth = FirebaseAuth.instance;
 
-  LoginViewModel();
-
   login(context, email, password) async {
     try {
       LoadingDialog dialog = LoadingDialog(
